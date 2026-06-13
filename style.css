@@ -1,0 +1,535 @@
+/* =====================
+   GLOBAL CSS
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b0b0b;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#0b0b0b;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    font-size:15px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00c8b3;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:white;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8% 80px;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-family:'Pacifico',cursive;
+    font-size:80px;
+    color:#00c8b3;
+}
+
+.hero-content h2{
+    margin:20px 0;
+    font-size:28px;
+}
+
+.hero-content p{
+    line-height:1.8;
+    max-width:500px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    border-radius:40px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.btn,
+.btn-dark{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 35px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn{
+    background:#00c8b3;
+    color:white;
+}
+
+.btn:hover{
+    background:#00a18f;
+}
+
+.btn-dark{
+    background:black;
+    color:white;
+}
+
+.btn-dark:hover{
+    background:#222;
+}
+
+/* =====================
+   WAVE SECTION
+===================== */
+
+.wave-green{
+    background:#00c8b3;
+    color:white;
+    position:relative;
+    padding:100px 8%;
+}
+
+.wave-green::before{
+    content:"";
+    position:absolute;
+    top:-80px;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#00c8b3;
+    border-radius:0 0 50% 50%;
+}
+
+.wave-green::after{
+    content:"";
+    position:absolute;
+    bottom:-80px;
+    left:0;
+    width:100%;
+    height:80px;
+    background:#00c8b3;
+    border-radius:50% 50% 0 0;
+}
+
+/* =====================
+   BLACK COFFEE
+===================== */
+
+.black-coffee{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.coffee-left,
+.coffee-right{
+    flex:1;
+}
+
+.coffee-left h2{
+    font-family:'Pacifico',cursive;
+    font-size:60px;
+}
+
+.coffee-right img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+}
+
+.coffee-right p{
+    margin-top:20px;
+    line-height:1.8;
+}
+
+/* =====================
+   HOT COFFEE
+===================== */
+
+.hot-coffee{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:120px 8%;
+}
+
+.coffee-image,
+.coffee-text{
+    flex:1;
+}
+
+.coffee-image img{
+    border-radius:30px;
+}
+
+.coffee-text h2{
+    font-family:'Pacifico',cursive;
+    font-size:60px;
+    color:#00c8b3;
+}
+
+.coffee-text p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+/* =====================
+   WHITE COFFEE
+===================== */
+
+.white-coffee{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:100px 8%;
+    background:#111;
+}
+
+/* =====================
+   VOUCHER
+===================== */
+
+.voucher-section{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.voucher-section h2{
+    font-family:'Pacifico',cursive;
+    font-size:70px;
+    margin-bottom:50px;
+    color:#00c8b3;
+}
+
+.voucher-card{
+    display:flex;
+    background:#111;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.voucher-image,
+.voucher-content{
+    flex:1;
+}
+
+.voucher-content{
+    padding:50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.voucher-content h3{
+    font-size:40px;
+}
+
+.voucher-content h4{
+    font-size:50px;
+    color:#00c8b3;
+    margin:15px 0;
+}
+
+.voucher-content p{
+    line-height:1.8;
+}
+
+/* =====================
+   REVIEWS
+===================== */
+
+.reviews{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.reviews h2{
+    font-family:'Pacifico',cursive;
+    font-size:70px;
+    color:#00c8b3;
+    margin-bottom:60px;
+}
+
+.review-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+.review-card{
+    background:#111;
+    padding:30px;
+    border-radius:25px;
+    max-width:350px;
+}
+
+.review-card img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:auto;
+}
+
+.review-card h3{
+    margin:20px 0 10px;
+}
+
+.review-card p{
+    line-height:1.7;
+}
+
+/* =====================
+   OPEN HOURS
+===================== */
+
+.open-hours{
+    background:#00c8b3;
+    color:white;
+    text-align:center;
+    padding:100px 8%;
+}
+
+.open-hours h2{
+    font-family:'Pacifico',cursive;
+    font-size:70px;
+    margin-bottom:40px;
+}
+
+.hours-box{
+    display:flex;
+    justify-content:center;
+    gap:100px;
+}
+
+.hour-item h3{
+    margin-bottom:10px;
+}
+
+/* =====================
+   BRANCHES
+===================== */
+
+.branches{
+    padding:120px 8%;
+    text-align:center;
+}
+
+.branches h2{
+    font-family:'Pacifico',cursive;
+    font-size:70px;
+    color:#00c8b3;
+    margin-bottom:50px;
+}
+
+.branch-container{
+    display:flex;
+    gap:30px;
+}
+
+.branch-card{
+    background:#111;
+    border-radius:25px;
+    overflow:hidden;
+}
+
+.branch-card h3{
+    padding-top:15px;
+}
+
+.branch-card p{
+    padding:15px 20px 25px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+    background:#00c8b3;
+    color:white;
+    padding:70px 8%;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.footer-logo h2{
+    font-size:35px;
+}
+
+.footer-links ul li{
+    margin:10px 0;
+}
+
+footer hr{
+    margin:40px 0;
+    border:none;
+    height:1px;
+    background:white;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom a{
+    color:white;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media(max-width:992px){
+
+    .hero,
+    .black-coffee,
+    .hot-coffee,
+    .white-coffee,
+    .voucher-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .review-container,
+    .branch-container,
+    .hours-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .coffee-right img{
+        width:280px;
+        height:280px;
+    }
+}
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        transition:.5s;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .hero-content h1{
+        font-size:55px;
+    }
+
+    .coffee-text h2,
+    .coffee-left h2,
+    .voucher-section h2,
+    .reviews h2,
+    .open-hours h2,
+    .branches h2{
+        font-size:45px;
+    }
+
+    .footer-top{
+        text-align:center;
+        flex-direction:column;
+    }
+}
