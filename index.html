@@ -1,230 +1,273 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coffee Time</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Menu</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="logo">
-      <span class="logo-icon">☕</span> YOUR LOGO
-    </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
-  </nav>
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-  <!-- HERO -->
+      <div class="logo">Coffee Time <i class="fa-solid fa-mug-hot"></i></div>
+
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
   <section class="hero">
-    <div class="hero-text">
-      <h1 class="script">Coffee Time</h1>
-      <h2>YOUR HEADLINE</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a href="#" class="btn btn-teal">Order Now</a>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <i class="fa-solid fa-mug-hot hero-icon"></i>
+        Coffee Time
+      </h1>
+      <h3>Fresh Coffee Every Day</h3>
+      <p>
+        Welcome to Coffee Time, where every cup is brewed with love and
+        passion. Enjoy premium coffee beans, rich aroma, delicious snacks,
+        and a relaxing atmosphere for every coffee lover.
+      </p>
+      <a href="menu.html" class="btn">Explore Menu</a>
     </div>
-    <div class="hero-img">
-      <img src="images/Hero section.jpeg" alt="Coffee cups" />
+
+    <div class="hero-image">
+      <img src="images/Herosection.jpeg" alt="Coffee Time" />
     </div>
-    <div class="coffee-bean bean1">☕</div>
-    <div class="coffee-bean bean2">☕</div>
   </section>
 
-  <!-- WAVE DOWN -->
-  <div class="wave-divider wave-teal-top"></div>
+  <!-- ===================== BLACK COFFEE ===================== -->
+  <section class="black-coffee" id="about">
+    <div class="coffee-text">
+      <h2>Black Coffees</h2>
+      <p>
+        Discover the bold and authentic taste of our premium black coffee.
+        Carefully selected coffee beans are roasted to perfection, delivering
+        a rich aroma and strong flavor in every sip.
+      </p>
+      <a href="#menu" class="btn">Order Now</a>
+    </div>
 
-  <!-- BLACK COFFEES -->
-  <section class="product-section bg-teal">
-    <div class="product-text left">
-      <h2 class="script white">Black<br>Coffees</h2>
-      <a href="#" class="btn btn-dark">Order Now</a>
+    <div class="coffee-image">
+      <img src="images/BlackCoffee.png" alt="Black Coffee" />
     </div>
-    <div class="product-img">
-      <img src="images/BlackCoffee.png" alt="Black coffee" class="blob-img" />
-    </div>
-    <div class="product-desc right-desc">
-      <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-    </div>
-    <div class="deco-bean db1">☕</div>
-    <div class="deco-bean db2">☕</div>
   </section>
 
-  <!-- WAVE UP -->
-  <div class="wave-divider wave-dark-top"></div>
+  <!-- ===================== HOT COFFEE ===================== -->
+  <section class="hot-coffee" id="menu">
+    <div class="coffee-image">
+      <img src="images/HotCoffee.png" alt="Hot Coffee" />
+    </div>
 
-  <!-- HOT COFFEES -->
-  <section class="product-section bg-dark alt">
-    <div class="product-img">
-      <img src="images/HotCoffee.png" alt="Hot coffee" class="blob-img" />
+    <div class="coffee-text">
+      <h2>Hot Coffees</h2>
+      <p>
+        Our hot coffee is prepared using freshly roasted coffee beans,
+        giving you a perfect balance of flavor and aroma. Whether you
+        need an energetic start to your day or a relaxing evening drink,
+        our premium hot coffee is the perfect choice.
+      </p>
+      <a href="#menu" class="btn">Order Now</a>
     </div>
-    <div class="product-text right">
-      <h2 class="script white">Hot<br>Coffees</h2>
-      <a href="#" class="btn btn-teal">Order Now</a>
-    </div>
-    <div class="product-desc left-desc">
-      <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-    </div>
-    <div class="deco-bean db3">☕</div>
   </section>
 
-  <!-- WHITE COFFEES -->
-  <section class="product-section bg-dark">
-    <div class="product-text left">
-      <h2 class="script white">White<br>Coffees</h2>
-      <a href="#" class="btn btn-teal">Order Now</a>
+  <!-- ===================== WHITE COFFEE ===================== -->
+  <section class="white-coffee">
+    <div class="coffee-text">
+      <h2>White Coffees</h2>
+      <p>
+        Experience the smooth and creamy taste of our premium white coffee.
+        Made with freshly brewed espresso and perfectly steamed milk, every
+        cup offers a rich aroma and delightful flavor that coffee lovers enjoy.
+      </p>
+      <a href="#menu" class="btn">Order Now</a>
     </div>
-    <div class="product-img">
-      <img src="images/WhiteCoffee.png" alt="White coffee" class="blob-img" />
+
+    <div class="coffee-image">
+      <img src="images/WhiteCoffee.png" alt="White Coffee" />
     </div>
-    <div class="product-desc right-desc">
-      <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ca commodo</p>
-    </div>
-    <div class="deco-bean db4">☕</div>
   </section>
 
-  <!-- VOUCHER -->
-  <section class="voucher-section bg-dark">
-    <h2 class="script white center">Voucher</h2>
+  <!-- ===================== VOUCHER ===================== -->
+  <section class="voucher" id="blog">
+    <h2>Voucher</h2>
+
     <div class="voucher-card">
       <div class="voucher-left">
-        <img src="images/voucherimage.jpeg" alt="Coffee" />
-        <div class="discount-badge">45%<br><span>OFF</span></div>
+        <img src="images/voucherimage.jpeg" alt="Coffee Voucher" />
       </div>
+
       <div class="voucher-right">
-        <div class="logo small">☕ YOUR LOGO</div>
-        <h3 class="script white">Voucher Discount</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-        <div class="voucher-valid">VALIDATE UNTIL: 01.09.2020</div>
-        <div class="voucher-social">
-          <span>🐦 your account</span>
-          <span>📷 your account</span>
-          <span>👤 your account</span>
+        <h3>Get 50% OFF</h3>
+        <p>
+          Enjoy a special discount on your favorite coffee.
+          Redeem this exclusive voucher and experience the
+          rich taste of premium coffee at an amazing price.
+        </p>
+        <button class="btn">Redeem Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-container">
+      <div class="review-card">
+        <img src="images/Jhon.jpeg" alt="John Kim" />
+        <h3>John Kim</h3>
+        <p>
+          "The coffee was absolutely amazing! Rich flavor,
+          smooth texture, and excellent service. This is my
+          favorite coffee shop."
+        </p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+
+      <div class="review-card">
+        <img src="images/Ella.jpeg" alt="Ella Pearson" />
+        <h3>Ella Pearson</h3>
+        <p>
+          "A wonderful place to relax with friends.
+          The aroma of freshly brewed coffee and the
+          cozy atmosphere make every visit special."
+        </p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPENING HOURS ===================== -->
+  <section class="hours">
+    <h2>We Are Open</h2>
+
+    <div class="schedule">
+      <div class="schedule-card">
+        <h3>Monday - Friday</h3>
+        <p>10:00 AM - 9:00 PM</p>
+        <p>Enjoy freshly brewed coffee and delicious snacks throughout the day.</p>
+      </div>
+
+      <div class="schedule-card">
+        <h3>Saturday - Sunday</h3>
+        <p>10:00 AM - 11:00 PM</p>
+        <p>Visit us on weekends for special coffee blends and exclusive offers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BRANCHES ===================== -->
+  <section class="branches">
+    <h2>Our Branches</h2>
+
+    <div class="branch-container">
+      <div class="branch-card">
+        <img src="images/NewYork.png" alt="New York Branch" />
+        <h3>New York</h3>
+        <p>
+          Visit our New York branch and enjoy freshly brewed
+          premium coffee in a warm and relaxing atmosphere.
+        </p>
+        <button class="btn">Visit Now</button>
+      </div>
+
+      <div class="branch-card">
+        <img src="images/Jakarta.jpeg" alt="Jakarta Branch" />
+        <h3>Jakarta</h3>
+        <p>
+          Experience handcrafted coffee prepared by expert
+          baristas using high-quality roasted coffee beans.
+        </p>
+        <button class="btn">Visit Now</button>
+      </div>
+
+      <div class="branch-card">
+        <img src="images/paris.png" alt="Paris Branch" />
+        <h3>Paris</h3>
+        <p>
+          Enjoy a perfect cup of coffee with delicious desserts
+          in our elegant Paris café.
+        </p>
+        <button class="btn">Visit Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h2><i class="fa-solid fa-mug-hot"></i> Coffee Time</h2>
+        <p>
+          Coffee Time is your perfect destination for freshly brewed
+          coffee, delicious snacks, and unforgettable moments.
+          Enjoy every sip with happiness.
+        </p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Indore, Madhya Pradesh</p>
+        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fa-solid fa-envelope"></i> coffeetime@gmail.com</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/CoffeeTimeOfficial" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/coffeetimecafe" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://x.com/CoffeeTimeCafe" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/@CoffeeTimeCafe" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
         </div>
       </div>
     </div>
-    <a href="#" class="btn btn-teal">Get Voucher Now</a>
-  </section>
 
-  <!-- REVIEWS -->
-  <section class="reviews-section bg-dark">
-    <h2 class="script white center">Customer Reviews</h2>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <img src="Jhon.jpeg" alt="John Peter" class="blob-img reviewer" />
-        <h4 class="script white">John Peter</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>
-      </div>
-      <div class="review-card">
-        <img src="images/Ella.jpeg" alt="Ella Thomson" class="blob-img reviewer" />
-        <h4 class="script white">Ella Thomson</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>
-      </div>
-    </div>
-  </section>
+    <hr />
 
-  <!-- WAVE FOR OPEN HOURS -->
-  <div class="wave-divider wave-teal-top"></div>
-
-  <!-- WE ARE OPEN -->
-  <section class="open-section bg-teal">
-    <div class="deco-bean open-bean1">☕</div>
-    <div class="deco-bean open-bean2">🫘</div>
-    <h2 class="script white center">We are Open</h2>
-    <div class="hours">
-      <div class="hours-row">
-        <strong>Monday - Friday</strong>
-        <span>10:00 am - 10:00 pm</span>
-      </div>
-      <div class="hours-row">
-        <strong>Saturday and Sunday</strong>
-        <span>10:00 am - 10:10 pm</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- WAVE DOWN -->
-  <div class="wave-divider wave-dark-top-2"></div>
-
-  <!-- BRANCHES -->
-  <section class="branches-section bg-dark">
-    <h2 class="script white center">Our Branches</h2>
-    <div class="branches-grid">
-      <div class="branch-card">
-        <img src="images/New York.png" alt="New York" />
-        <div class="branch-label">New York</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-      </div>
-      <div class="branch-card">
-        <img src="images/Jakarta.jpeg" alt="Jakarta" />
-        <div class="branch-label">Jakarta</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-      </div>
-      <div class="branch-card">
-        <img src="images/Paris.png" alt="Paris" />
-        <div class="branch-label">Paris</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- WAVE FOR FOOTER -->
-  <div class="wave-divider wave-teal-top"></div>
-
-  <!-- FOOTER -->
-  <footer class="footer bg-teal">
-    <div class="footer-logo">
-      <span class="logo-icon">☕</span> YOUR LOGO
-    </div>
-    <div class="footer-col">
-      <h4>Information.</h4>
-      <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Branches</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Map</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact Us.</h4>
-      <p>Support</p>
-      <p>your_id@gmail.com</p>
-    </div>
     <div class="footer-bottom">
-      <ul class="footer-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="footer-social">
-	  <a href="#"><i class="fab fa-facebook-f"></i></a>
-
-        <a href="#"><i class="fab fa-instagram"></i></a>
-
-        <a href="#"><i class="fab fa-twitter"></i></a>
-
-        <a href="#"><i class="fab fa-youtube"></i></a>
-
-     <!--   <a href="#">📘</a>
-        <a href="#">📷</a>
-        <a href="#">🐦</a>
-        <a href="#">▶️</a>  -->
-      </div>
+      <p>© 2026 Coffee Time</p>
     </div>
   </footer>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <div class="ScrollToTop">
+    <button class="ScrollToTop-top-btn">↑</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
